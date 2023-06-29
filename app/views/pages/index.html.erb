@@ -1,0 +1,16 @@
+<div class="container">
+    <h1 class="text-center mb-5"><strong>Lista de Personajes de Harry Potter</strong></h1>
+    <div class="row justify-content-center">
+        <% @characters.each do |character| %>
+            <div class="col-4 mb-5">
+                <div class="card back">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Nombre: <%= character.name %></li>
+                        <li class="list-group-item">Locación: <%= character.location %></li>
+                        <li class="list-group-item">Casa: <%= character.house %></li>
+                    </ul>
+                </div>
+            </div>
+        <% end %>
+     </div>
+</div>
